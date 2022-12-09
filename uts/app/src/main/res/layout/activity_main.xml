@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="40dp"
+    tools:context=".MainActivity"
+    android:background="#F3EFE0">
+
+    <TextView
+        android:id="@+id/judul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="Input Data Hp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/inNama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/judul"
+        android:layout_marginBottom="10dp"
+        android:hint="Nama Handphone" />
+    <EditText
+        android:id="@+id/inHarga"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/inNama"
+        android:layout_marginBottom="10dp"
+        android:hint="harga Hanphone"
+        />
+
+    <EditText
+        android:id="@+id/madein"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/inHarga"
+        android:layout_marginBottom="10dp"
+        android:hint="Madein" />
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/madein"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="30dp"
+        android:text="Submit" />
+
+    <EditText
+        android:id="@+id/id"
+        android:layout_width="157dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnAdd"
+        android:layout_marginBottom="10dp"
+        android:hint="id" />
+
+    <Button
+        android:id="@+id/btnGetId"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnAdd"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="30dp"
+        android:layout_toRightOf="@id/id"
+        android:text="get" />
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="163dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/id"
+        android:layout_marginBottom="30dp"
+        android:text="update" />
+
+    <Button
+        android:id="@+id/btnDel"
+        android:layout_width="158dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/id"
+        android:layout_marginBottom="30dp"
+        android:layout_toRightOf="@id/btnUpdate"
+        android:text="delete" />
+
+    <TableLayout android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_below="@id/btnDel"
+        android:id="@+id/tabel_data">
+        <TableRow android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView android:layout_height="wrap_content"
+                android:layout_width="50dip"
+                android:text="@string/nomorLabel"
+                android:id="@+id/no_id"></TextView>
+            <TextView android:layout_height="wrap_content"
+                android:layout_width="100dip"
+                android:text="@string/namaLabel"
+                android:id="@+id/nama_id"></TextView>
+            <TextView android:layout_width="100dip"
+                android:layout_height="wrap_content"
+                android:text="@string/hobiLabel"
+                android:id="@+id/harga"></TextView>
+            <TextView android:layout_width="100dip"
+                android:layout_height="wrap_content"
+                android:text="@string/madeLabel"
+                android:id="@+id/made"></TextView>
+        </TableRow>
+    </TableLayout>
+</RelativeLayout>

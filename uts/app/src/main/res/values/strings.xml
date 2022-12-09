@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">uts</string>
+    <string name="namaLabel">Nama Barang</string>
+    <string name="hobiLabel">Harga Barang</string>
+    <string name="madeLabel">Made In</string>
+    <string name="nomorLabel">No.</string>
+    <string name="btnGetRow">Get</string>
+    <string name="btnUpdateRow">Update</string>
+    <string name="ketUpdate">Sebelum mengubah data, pilih dulu baris ke berapa
+      data yang akan diubah</string>
+    <string name="ketAmbilBaris">Update data pada baris ke</string>
+    <string name="ketDelete">Tulis no. baris
+      yang akan di delete, lalu klik tombol &quot;delete&quot;</string>
+    <string name="btnDel">Delete</string>
+</resources>
